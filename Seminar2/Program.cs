@@ -74,22 +74,18 @@ Console.WriteLine($"New version of {randNumber} is {newNumber}");
 // является ли одно число квадратом другого.
 
 
-bool SquareOrNot(int num1, int num2)
-{
-    return (num1 / num2 == num2 || num2 / num1 == num1);
-}
+// bool SquareOrNot(int num1, int num2)
+// {
+//     return (num1 / num2 == num2 || num2 / num1 == num1);
+// }
 
-Console.Write("Please insert first number: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Please insert second number: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Please insert first number: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Please insert second number: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
 
-bool result = SquareOrNot(num1, num2);
-if (result)
-    Console.WriteLine($"Number {num1} or number {num2} is a square of the other number");
-else
-    Console.WriteLine($"Number {num1} or number {num2} is not a square of the other number");
-
-
-
-
+// bool result = SquareOrNot(num1, num2);
+// if (result)
+//     Console.WriteLine($"Number {num1} or number {num2} is a square of the other number");
+// else
+//     Console.WriteLine($"Number {num1} or number {num2} is not a square of the other number");
