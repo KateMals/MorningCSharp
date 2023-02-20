@@ -6,7 +6,7 @@ int CutNumber(int num)
 {
     int hundreds = num / 100;
     int units = num % 10;
-    int result = hundreds * 10 + units;
+    int result = hundreds * 10 + unit s;
 
     return result;
 }
