@@ -136,4 +136,4 @@ ShowArray(newArray);
 
 double result = foundMaxMin(newArray);
 Console.WriteLine($"the dif from Max and Min of array: {result} ");
-*//
+*/
