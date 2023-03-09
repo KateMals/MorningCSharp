@@ -52,14 +52,60 @@ Show2dArray(newArray);
 5 9 2 3
 8 4 2 4
 1 7 -> элемента с такими индексами в массиве нет */
+/*
+int[,] CreateRandom2dArray(int rows, int colums, int minValue, int maxValue)
+{   
+    int[,] array = new int[rows, colums];
+
+    for(int i = 0; i < rows; i++)
+    {
+        for(int j = 0; j < colums; j++)
+        {
+            array[i,j] = new Random().Next(minValue, maxValue + 1);
+        }
+    }
+    return array;
+}
+
+void Show2dArray(int[,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array[i,j] + " ");
+
+        Console.WriteLine();
+    }
+    Console.WriteLine();        
+}
+
+void findElement(int[,] array, int row, int column)
+{
+    if (row > array.GetLength(0) || column > array.GetLength(1))
+        Console.WriteLine("Element is not in the array");
+    else
+        Console.WriteLine($"Element value {row} row and {column} column is {array[row-1,column-1]}");
+}
+
+Console.Write("Input a number of rows: ");
+int rows = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a number of colums: ");
+int colums = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a min possible value: ");
+int minValue = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a max possible value: ");
+int maxValue = Convert.ToInt32(Console.ReadLine());
 
 
+int[,] newArray = CreateRandom2dArray(rows, colums, minValue, maxValue);
+Show2dArray(newArray);
 
-
-
-
-
-
+Console.Write("Input a number of find element row: ");
+int row = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a number of find element column: ");
+int column = Convert.ToInt32(Console.ReadLine());
+findElement(newArray, row, column);
+*/
 
 //Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 /*
