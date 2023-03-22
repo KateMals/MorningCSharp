@@ -59,7 +59,7 @@ ShowNumsWithinNums(20, 1);
 
 // Напишите программу, которая на вход принимает два числа 
 // A и B, и возводит число А в целую степень B.
-
+/*
 double PowerOfNum(double num, int pow)
 {
     if(pow == 0) return 1;
@@ -74,3 +74,4 @@ double PowerOfNum(double num, int pow)
 }
 
 Console.WriteLine(PowerOfNum(2,-5));
+*/
